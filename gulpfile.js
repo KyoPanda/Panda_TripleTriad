@@ -26,6 +26,7 @@ gulp.task('build', function() {
 		.pipe(replace(/\/\*global.*\*\/(\r?\n)+/g, ''))
 		.pipe(replace(/(.+)/g, '\t$1'))
 		.pipe(concat(config.output))
+		.pipe(replace(/(\r?\n)+$/g, ''))
 		.pipe(iife({
 			useStrict: false,
 			trimCode: false,

@@ -7,17 +7,16 @@
 	'use strict';
 
 	/**
+	 * Defines the global scope for browser.
+	 */
+	var global = typeof window !== 'undefined' ? window : {};
+
+	/**
 	 * Namespace used conventionally for importing plugins.
 	 * @namespace Imported
 	 * @type {Object}
 	 */
-	var Imported;
-
-	if (typeof window !== 'undefined') {
-		Imported = window.Imported || {};
-	} else {
-		Imported = global.Imported || {};
-	}
+	var Imported = global.Imported || {};
 
 	/**
 	 * The Triple Triad reference of Imported namespace.
@@ -31,13 +30,7 @@
 	 * @namespace Panda
 	 * @type {Object}
 	 */
-	var Panda;
-
-	if (typeof window !== 'undefined') {
-		Panda = window.Panda || {};
-	} else {
-		Panda = global.Panda || {};
-	}
+	var Panda = global.Panda || {};
 
 	/**
 	 * The Triple Triad's plugin namespace.
@@ -53,7 +46,6 @@
 	 * @type {String}
 	 */
 	Panda.TripleTriad.version = '1.0.0-beta';
-
 
 	/**
 	 * @ignore
@@ -145,7 +137,7 @@
 		/**
 		 * Default export.
 		 */
-		window.Panda = Panda;
-		window.Imported = Imported;
+		global.Panda = Panda;
+		global.Imported = Imported;
 	}
 }());

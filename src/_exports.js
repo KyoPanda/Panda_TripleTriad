@@ -10,6 +10,6 @@ if (typeof module !== 'undefined' && module.exports) {
 	/**
 	 * Default export.
 	 */
-	window.Panda = Panda;
-	window.Imported = Imported;
+	global.Panda = Panda;
+	global.Imported = Imported;
 }
