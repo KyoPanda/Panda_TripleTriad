@@ -4,6 +4,7 @@
 
 /**
  * Defines the global scope for browser.
+ * @ignore
  */
 var global = typeof window !== 'undefined' ? window : {};
 
