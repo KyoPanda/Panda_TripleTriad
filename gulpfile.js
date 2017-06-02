@@ -32,7 +32,7 @@ gulp.task('build', function() {
 			trimCode: false,
 			prependSemicolon: false
 		}))
-		.pipe(header(fs.readFileSync(config.header, 'utf8') + '\n'))		
+		.pipe(header(fs.readFileSync(config.header, 'utf8') + '\n'))
 		.pipe(gulp.dest(config.dist))
 	;
 });
