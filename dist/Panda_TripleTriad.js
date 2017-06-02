@@ -101,17 +101,17 @@
 	 * @function initialize
 	 * @memberof Panda.TripleTriad.Game_Board.prototype
 	 *
-	 * @param {Object} params The constructor params for the object.
+	 * @param {Object} [params={}] The constructor params for the object.
 	 * @param {Number} [params.columns=3] The number of card slots columns.
 	 * @param {Number} [params.rows=3] The number of card slots rows.
 	 *
 	 * @returns {void}
 	 */
 	$.Game_Board.prototype.initialize = function(params) {
-		var _params = params || {};
+		var settings = params || {};
 
-		this._columns = _params.columns || 3;
-		this._rows = _params.rows || 3;
+		this._columns = settings.columns || 3;
+		this._rows = settings.rows || 3;
 
 		this._slots = Array.apply(null, Array(this.size)).map(function() {
 			return null;
