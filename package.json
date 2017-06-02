@@ -1,0 +1,26 @@
+{
+  "name": "panda-tripletriad",
+  "version": "1.0.0-beta",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "author": "Kyo Panda",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "del": "^2.2.2",
+    "eslint-config-airbnb-es5": "^1.1.0",
+    "eslint-plugin-react": "^7.0.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^1.8.8",
+    "gulp-iife": "^0.3.0",
+    "gulp-jasmine": "^2.4.2",
+    "gulp-jsdoc3": "^1.0.1",
+    "gulp-replace": "^0.5.4",
+    "jasmine": "^2.6.0"
+  },
+  "private": true
+}
